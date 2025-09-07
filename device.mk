@@ -35,7 +35,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-lmodroid
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -48,7 +48,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.default
 
-$(call soong_config_set,lineage_powershare,powershare_path,/sys/class/power_supply/wireless/reverse_chg_mode)
+$(call soong_config_set,lmodroid_powershare,powershare_path,/sys/class/power_supply/wireless/reverse_chg_mode)
 
 # Rootdir
 PRODUCT_PACKAGES += \
